@@ -414,7 +414,7 @@ void solve()
     ll l = stoll(L), r = stoll(R);
     ll maxbase = max(get_fold(l), get_fold(r));
     ll lenr = R.size(), lenl = L.size();
-    if (lenr > lenl && R[0] == '1')
+    if (lenr > lenl)
     {
         int ok = 1;
         int i = 1;
@@ -424,12 +424,16 @@ void solve()
             if (!ok) break;
             i++;
         }
-        if (ok)
+        if (ok && R[0] == '1')
         {
             cout << r - 1 << endl;
         }
         else
         {
+            if (R[0] != '1')
+            {
+                i = 0;
+            }
             R[i++] -= 1;
             for (int j = i; j < lenr; j++)
             {
@@ -455,7 +459,7 @@ void solve()
         {
             pos++;
         }
-        if (pos == lenr - 1)
+        if (pos == lenr )
         {
             cout << maxbase << endl;
 
