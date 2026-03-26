@@ -26,6 +26,19 @@ Debug/
 .vs
 Release/
 
+*.txt
+*.cmake
+*.rsp
+*.make
+*.ts
+*.bin
+*.marks
+*.yaml
+*.json
+Makefile
+Makefile2
+*.check_cache
+CMake*
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
