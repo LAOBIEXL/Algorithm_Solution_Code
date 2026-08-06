@@ -61,9 +61,10 @@ int main()
                 {
                     if(st[e] != -1 )
                     {
-                        if(st[e] == -2)
+                        if(st[e] == -2 && num[e] == 1)
                         {
                             num[e]++;
+                            q.push(e);
                         }
                         else
                         {
