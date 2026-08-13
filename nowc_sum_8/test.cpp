@@ -14,13 +14,14 @@ void solve()
         st.insert(t);
         if(t >= 2 * n)
         {
-            cout << 0 << endl;
+           
             flag = true;
             //return;
         }
     }
     if(flag)
     {
+         cout << 0 << endl;
         return;
     }
     vector<int> dp(n + 2) ;
@@ -33,6 +34,7 @@ void solve()
             {
                 dp[j] = dp[j - 1];
             }
+            dp[0] = 0;
         }
         else
         {
